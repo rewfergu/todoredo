@@ -1,0 +1,83 @@
+//@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+// @import url(https://fonts.googleapis.com/css?family=Pacifico);
+// @import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker|Rock+Salt|Nixie+One|Oldenburg);
+@import "vars";
+
+body {
+  margin: 0;
+  font-family: $bodyFont, sans-serif;
+  font-weight: 400;
+  color: $fontColor;
+  // background: #FFFFEB;
+  background: #fff;
+  font-size: 18px;
+}
+
+.container {
+  max-width: $page-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main {
+  margin-bottom: 200px !important;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input {
+  display: inline-block;
+  border: none;
+  border-radius: $radius;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-family: $bodyFont;
+}
+
+button, textarea {
+  outline: none;
+}
+
+.btn {
+  border: none;
+  flex-shrink: 0;
+  border-radius: $radius;
+  background: $button-bg;
+  padding: 10px;
+  width: $button-width;
+  font-size: .8em;
+  //text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  transition: .25s background;
+  svg {
+    fill: white;
+    max-width: 15px;
+  }
+}
+
+.btn:hover {
+  background: $button-bg-hover;
+}
+
+button.disabled {
+  border: none;
+  border-radius: $radius;
+  background: rgba(0,0,0,0.1);
+  padding: 10px;
+  width: $button-width;
+  font-size: .8em;
+  transition: .25s background;
+  cursor: not-allowed;
+  svg {
+    fill: white;
+    max-width: 15px;
+  }
+}
+
+a, button, input, select, textarea, label, summary {
+  touch-action: manipulation;
+}
